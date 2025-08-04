@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서울랜드 - 자연 속 힐링 테마파크</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- 팝업 -->
+    <div class="popup">
+        해당 사이트는 학습용으로 제작되었으며 서울랜드와 무관합니다.
+        구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
+        <button class="ppb">닫기</button>
+    </div>
     <!-- 상단 -->
     <nav class="nav">
         <div class="nav-container">
@@ -63,29 +70,12 @@
                 <div class="hero-right">
                     <div class="featured-card">
                         <div class="card-content">
-                            <h3>서울랜드 크라켄 아일랜드</h3>
-                            <p>시원하고 짜릿한 새 친구를 만나보세요!</p>
-                            <div class="card-title">물놀이터 OPEN!</div>
-                            <div class="card-icons">
-                                <div class="icon red">🏊</div>
-                                <div class="icon blue">🌊</div>
-                                <div class="icon yellow">🦆</div>
-                            </div>
+                            <img src="./img/imgFile_1750055923_0.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="carousel-dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot long"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+        </div>
         </div>
     </section>
 
@@ -106,12 +96,7 @@
     <section class="discount-section">
         <div class="container">
             <div class="special-promo">
-                <div class="promo-card">
-                    <p>서울랜드 연간 이용권을 이용한다면?</p>
-                    <h3>꿀혜택이 팡팡!</h3>
-                    <p>쏟아져요!</p>
-                    <button class="promo-btn">GO</button>
-                </div>
+                <img src="img/welcom.webp" alt="#" class="promo-card">
             </div>
 
             <div class="section-header">
@@ -173,30 +158,30 @@
 
             <div class="attractions-grid-large">
                 <div class="attraction-large purple">
-                    <div class="attraction-icon-large">🎢</div>
                     <div class="attraction-info">
-                        <h3>놀이기구1</h3>
-                        <p>90cm ~ 135cm</p>
+                        <img src="img/thumbnailImgFile_1650337319_0.webp" alt="#">
+                        <h3>빅회전목마</h3>
+                        <p>100cm</p>
                     </div>
                 </div>
                 <div class="attraction-large blue">
-                    <div class="attraction-icon-large">🎢</div>
                     <div class="attraction-info">
-                        <h3>놀이기구2</h3>
-                        <p>~ 125cm</p>
-                    </div>
-                </div>
-                <div class="attraction-large orange">
-                    <div class="attraction-icon-large">🎢</div>
-                    <div class="attraction-info">
-                        <h3>놀이기구3</h3>
+                        <img src="img/thumbnailImgFile_1621843921_0.webp" alt="#">
+                        <h3>카트라이더범퍼</h3>
                         <p>100cm ~</p>
                     </div>
                 </div>
                 <div class="attraction-large orange">
-                    <div class="attraction-icon-large">🎢</div>
                     <div class="attraction-info">
-                        <h3>놀이기구4</h3>
+                        <img src="img/thumbnailImgFile_1650342841_0.webp" alt="#">
+                        <h3>베스트키즈</h3>
+                        <p>~ 125cm</p>
+                    </div>
+                </div>
+                <div class="attraction-large yellow">
+                    <div class="attraction-info">
+                        <img src="img/thumbnailImgFile_1650517888_0.webp" alt="#">
+                        <h3>터닝메카드레이싱</h3>
                         <p>100cm ~</p>
                     </div>
                 </div>
@@ -210,68 +195,24 @@
             <div class="section-header">
                 <h2>공연안내 <i class="fas fa-arrow-right"></i></h2>
             </div>
-
-            <div class="events-grid">
-                <div class="events-left">
-                    <div class="service-card">
-                        <div class="service-icon orange"></div>
-                        <div class="service-info">
-                            <h3>가이드맵</h3>
-                            <p>서울랜드를 한눈에 둘러보세요!</p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon blue">⏰</div>
-                        <div class="service-info">
-                            <h3>어트랙션 예약 앱</h3>
-                            <p>이거 없으면 손해!</p>
-                            <p>간편하게 예약해요</p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon pink">🎁</div>
-                        <div class="service-info">
-                            <h3>연간이용혜택</h3>
-                            <p>서울랜드를 내집처럼!</p>
-                            <p>돌아보세요</p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon yellow">⭐</div>
-                        <div class="service-info">
-                            <h3>단체행사</h3>
-                            <p>서울랜드를 내집처럼!</p>
-                            <p>틈만나면 간다</p>
-                        </div>
-                    </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/listImgFile_1665468084_0.webp" alt="#"></div>
+                    <div class="swiper-slide"><img src="img/listImgFile_1743475490_0.jpg" alt="#"></div>
+                    <div class="swiper-slide"><img src="img/listImgFile_1749807006_0.jpg" alt="#"></div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-                <div class="news-section">
-                    <h3>최신 소식</h3>
-                    <div class="news-items">
-                        <div class="news-item">
-                            <div class="news-category orange">공지사항</div>
-                            <h4>크라켄 아일랜드 풀놀이터 OPEN!</h4>
-                            <span class="news-date">2025.04.24</span>
-                        </div>
-                        <div class="news-item">
-                            <div class="news-category orange">공지사항</div>
-                            <h4>서로 배려하는 서울랜드 에티켓...</h4>
-                            <span class="news-date">2025.06.27</span>
-                        </div>
-                        <div class="news-item">
-                            <div class="news-category blue">이벤트</div>
-                            <h4>서울랜드 King of Ga...</h4>
-                            <span class="news-date">2025.07.02</span>
-                        </div>
-                        <div class="news-item">
-                            <div class="news-category blue">이벤트</div>
-                            <h4>애니메이션 드래곤의 여름</h4>
-                            <span class="news-date">2025.03.19</span>
-                        </div>
-                    </div>
-                    <button class="more-news">더 많은 소식 보기 →</button>
-                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
     </section>
@@ -285,43 +226,23 @@
 
             <div class="social-grid">
                 <div class="social-post">
-                    <div class="post-image pink">
+                    <div class="post-image">
                         <i class="fab fa-instagram"></i>
-                        📸
-                    </div>
-                    <div class="post-content">
-                        <div class="post-stats">
-                            <span><i class="fas fa-heart"></i> 156</span>
-                            <span><i class="fas fa-comment"></i> 12</span>
-                        </div>
-                        <p>크라켄 아일랜드에서 즐거운 하루! 🌊</p>
+                        <img src="img/1752800419.jpg" alt="">
                     </div>
                 </div>
                 <div class="social-post">
-                    <div class="post-image blue">
+                    <div class="post-image">
                         <i class="fab fa-instagram"></i>
-                        📸
-                    </div>
-                    <div class="post-content">
-                        <div class="post-stats">
-                            <span><i class="fas fa-heart"></i> 203</span>
-                            <span><i class="fas fa-comment"></i> 18</span>
-                        </div>
-                        <p>새로운 놀이기구 체험! 정말 재미있어요 🎢</p>
+                        <img src="img/1753146044.jpg" alt="">
                     </div>
                 </div>
                 <div class="social-post">
-                    <div class="post-image orange">
+                    <div class="post-image 3">
                         <i class="fab fa-instagram"></i>
-                        📸
+                        <img src="img/1753405288.jpg" alt="">
                     </div>
-                    <div class="post-content">
-                        <div class="post-stats">
-                            <span><i class="fas fa-heart"></i> 178</span>
-                            <span><i class="fas fa-comment"></i> 9</span>
-                        </div>
-                        <p>친구들과 함께한 특별한 추억 ✨</p>
-                    </div>
+
                 </div>
             </div>
 
@@ -409,7 +330,7 @@
 
             <div class="footer-links">
                 <a href="#">서울랜드</a>
-                <a href="#">개인정보처리방침</a>
+                <a href="#"><strong>개인정보처리방침</strong></a>
                 <a href="#">이메일 무단 수집 거부</a>
                 <a href="#">인재 채용</a>
                 <a href="#">서울랜드 스마트</a>
@@ -432,15 +353,29 @@
 
                 <div class="footer-details">
                     <p>13829 경기도 서울시 우리로 181 (주) 서울랜드 02-000-0001 111-11-12354</p>
-                    <p>통신판매업 신고번호 : </p>
-                    <p>개인정보 보호책임자 : 홍길동 Webmaster@seoulland.co.kr</p>
-                    <p class="copyright">Copyright © Seoulland. All rights reserved.?</p>
+                    <p>통신판매업 신고번호 : 서울 제 000호 </p>
+                    <p>개인정보 관리책임자 : 홍길동 Webmaster@seoulland.co.kr</p>
+                    <p class="copyright">Copyright © Seoulland. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
 </html>
+
+<style>
+    .attraction-large.purple .attraction-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attraction-large.purple img {
+        width: 274px;
+        display: block;
+    }
+</style>
