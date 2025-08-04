@@ -657,7 +657,7 @@ ppb {
 }
 
 .attraction-large.purple {
-    background: linear-gradient(135deg, #7C3AED 100%);
+    background: linear-gradient(135deg, #7C3AED 0%, #7C3AED 100%);
 }
 
 .attraction-large.purple .attraction-info {
@@ -673,7 +673,7 @@ ppb {
 }
 
 .attraction-large.blue {
-    background: linear-gradient(135deg, #2563EB 100%);
+    background: linear-gradient(135deg, #2563EB 0%, #2563EB 100%);
 }
 
 .attraction-large.blue .attraction-info {
@@ -689,7 +689,7 @@ ppb {
 }
 
 .attraction-large.orange {
-    background: linear-gradient(135deg, #EA580C 100%);
+    background: linear-gradient(135deg, #EA580C 0%, #EA580C 100%);
 }
 
 .attraction-large.orange .attraction-info {
@@ -705,7 +705,7 @@ ppb {
 }
 
 .attraction-large.yellow {
-    background: linear-gradient(135deg, #bad423 100%);
+    background: linear-gradient(135deg, #fde68a 0%, #bad423 100%);
 }
 
 .attraction-large.yellow .attraction-info {
