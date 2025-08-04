@@ -668,6 +668,7 @@ ppb {
 
 .attraction-large.purple img {
     border-radius: 10rem;
+    width: 274px;
     object-fit: cover;
 }
 
