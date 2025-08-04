@@ -65,15 +65,17 @@ ppb {
     height: 4rem;
 }
 
-.logo {
+.logo a {
     display: flex;
     align-items: center;
-    height: 3rem;
+    min-height: 40px;
+    min-width: 120px;
 }
-.logo img {
-    height: 100%;
+.logo a img {
+    max-height: 48px;
     width: auto;
     display: block;
+    object-fit: contain;
 }
 
 .nav-menu {
